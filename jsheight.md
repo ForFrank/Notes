@@ -1,0 +1,1 @@
+- 原型中的``constructor``、``prototype``和``__proto__``之间的关系
