@@ -1,2 +1,6 @@
 - 2.2.2  with
     -   with通常被当作重复 引用同一个对象中的多个属性的快捷方式，可以不需要引用对象本身
+- 4 提升
+    -   只有声明本身会被提升，而赋值或其他逻辑会留在原地
+    - [ReferenceError和TypeError的区别](https://blog.csdn.net/u011435776/article/details/80938130)
+    - 函数会首先被提升，然后才是变量
