@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<META http-equiv="X-UA-Compatible" content="IE=8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- font files  -->
+<link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/foundation/5.5.0/css/foundation.css">
+<link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
+<!-- <link  href="images/style.css" rel="stylesheet" type="text/css" /> -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<title>第四组-动检</title>
+</style>
+</head>
+<body>
+
+
+
+	<table style="border-collapse:collapse;border:0; cellspacing:0; cellpadding:0; background-color:rgba(0,0,0,0);">
+		
+		<!-- <tr> -->
+			<!-- <table style="border-collapse:collapse;border:0; cellspacing:0; cellpadding:0; background-color:rgba(242, 242, 242,0.1);border-radius:25px;"> -->
+			<!-- <td> -->
+			<!-- <div style="display: flex"> -->
+			<div  class="titleDisplayBG" style="margin-left:300px;font-size:40px; font-family:楷体; font-weight:10; letter-spacing:10px; display: inline-block;">主码流</div>
+			<!-- </td> -->
+			<!-- <div style="height:30px;width:720px;float:left; margin-left:200px "class="Title" float="left">主码流</div> -->
+			<!-- <td> -->
+			<!-- <div  class="titleDisplayBG" style="background-color:rgba(206, 231, 255,0.2); margin-left:350px;font-size:40px; font-family:楷体; font-weight:600; letter-spacing:10px; display: inline-block;">菜单</div> -->
+			<div  class="titleDisplayBG" style="margin-left:490px;font-size:40px; font-family:楷体; font-weight:600; letter-spacing:10px; display: inline-block;">菜单</div>
+			<!-- </div> -->
+			<!-- </td> -->
+			<!-- </table> -->
+		<!-- </tr> -->
+	<!-- <div  style="height:30px;width:1300px;" class="Title" float="right">菜单</div> </br> -->
+		
+			<tr style="FILTER:Alpha(opacity=0);">
+			<!-- <div style="position:absolute;width:100%;height:100%;top:0px;left:0px;z-index:-1"><img src="images/bg.jpg" width=100% height=100%> -->
+				
+	<!-- 主码流 -->
+					<td colspan="2">
+						<!-- <iframe src="" name="sdev_stream_wrap" id="sdev_stream_wrap" style="height:480px;width:640px;background-color:lightgray;"></iframe> -->
+						<div id="sdev_stream_wrap" class="borderleft"  style="height:480px;width:640px;background-color:lightgray;">						
+						</div>	
+					</td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					
+	<!-- 视频流与动检参数之间空间 -->
+						<td >
+							<div style="height:10px;width:100px;"></div>
+						</td>
+						
+	<!-- 菜单 -->
+					<td style="background-color:rgba(0, 0, 0,0.1); border-radius:25px; padding-left:70px; cellspacing:20px; "}   >
+				<!--	<td style="background-color:rgba(120, 180, 215,0.5); border-radius:25px; padding-left:70px; cellspacing:20px; "}   >	-->				
+					<!-- <div    style="background-color:rgba(0,90,180,0.3); position:relative; margin-top:20px;"> -->
+					<!-- <div    style="background:url(images/bg.jpg) repeat-x 0 30px; position:relative; margin-top:20px;"> -->
+					<!-- <div   style="background-image:url('/images/bg.jpg')"> -->
+						<table width="500" height="0" border="0"  cellpadding="0" cellspacing="0" style="background-color:rgba(0,0,0,0); border-color:rgba(0,0,0,0);" >			
+		
+	<!-- 参数显示距离top边框距离br设置		 -->
+							<tr>
+							<div></br></br>
+							<!-- <p style="margin-left:100px;" class="Title"><b>菜单</b></p>				 -->
+							</div>
+							</tr>
+	<!-- 拉流闭流——保存刷新					 -->
+							<tr>							
+								<!-- <td  valign="middle"> -->
+								<div style="margin-left:30px;">
+							 	<button type="button"  onclick="colorChange"  id="open_stream"   needinput="true" class="openCloseStream">拉&emsp;流</button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+								<button type="button"  onclick="colorChange"  id="close_stream"  needinput="true" class="openCloseStream">闭&emsp;流</button></br></br></br>
+								</div>
+								<!-- </td> -->							
+							</tr>
+						
+							<tr>
+								<!-- <td colspan="2" class="tableTD"> -->
+								<div style="margin-left:25px">
+								<button  class="textBG" disabled="disabled" style="background-color: #F5F5F6; color:black;">检测区</button>&emsp;&emsp;
+									<!-- <b class="tableTD">检测区：</b> -->
+									<input type=“text” id="p1" style="width:290px; height:45px; font-size:20px; border:none; text-align:center; letter-spacing:4px" disabled="disabled" style="background:rgba(211,211,211,0.5);"> 
+									</br></br></br>
+								</div>				
+								<!-- </td> -->
+							</tr>
+							<tr>
+								<!-- <td class="tableTD"> -->
+								<div style="margin-left:25px">
+								<button  class="textBG" disabled="disabled" style="background-color: #F5F5F6; color:black;">划分区</button>&emsp;&emsp;
+								<!-- <b class="tableTD">划分区：</b> -->
+								<input type=“text”   placeholder="M(行数)"   id="getMValue" style="width:120px; height:45px;font-size:22px; text-align:center;" oninput="if(value>40)value=40;if(value<0)value=0"/><b style="font-size:35px; font-weight:500;"> × </b> 
+								<input type=“text” text-align="center"   placeholder="N(列数)"  id="getNValue" style="width:120px; height:45px;font-size:22px;text-align:center;"  oninput="if(value>30)value=30;if(value<0)value=0"/ ></br></br>
+								</br>
+								</div>
+								<!-- </td>   -->
+							</tr>
+							<tr>
+								<!-- <td class="tableTD"> -->
+								<div style="margin-left:25px">
+								<button  class="textBG" disabled="disabled" style="background-color: #F5F5F6; color:black;">灵敏度</button>&emsp;&emsp;
+								<!-- <b class="tableTD">灵敏度：</b> -->
+								<input type=“text” id="getSensValue"   placeholder="0~100" style="width:120px; height:45px;font-size:20px; text-align:center;" >&nbsp;<b style="font-size:26px; font-weight:500;">%</b></br>
+								</br></br></br>
+								</div>
+								<!-- </td>                    -->
+							</tr>
+							<tr>
+								<!-- <td> -->
+								<div style="margin-left:25px">								
+								<!-- <button type="button" class="buttonSaveRef"  needinput="true" onclick="startInterval()">show</button> -->
+								<!-- <button type="button" class="buttonSaveRef"  needinput="true" onclick="clearedInterval()">close</button> -->
+								<button type="button" class="buttonSaveRef"  needinput="true" onclick="saveConfig()">保&nbsp;存</button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+								<button type="button" class="buttonSaveRef"  needinput="true" onclick="refresh()">刷&nbsp;新</button></br></br>
+								</div>
+								
+								<!-- </td>					 -->
+							</tr>					 
+						</table>
+						<!-- </div> -->
+					</td>
+			 <!-- </div> -->
+			</tr>	
+			
+			
+			
+		</table>
+		
+<!-- 图像存储区 -->
+		<table style="border-collapse:collapse;border:0; cellspacing:0; cellpadding:0; background-color:rgba(242, 242, 242,0.1);border-radius:25px;">
+			<tr>
+			
+		
+			<div class="titleDisplayBG" style="margin-left:420px;font-size:40px; font-family:楷体; font-weight:600; letter-spacing:10px;">
+			<button type="button" class="buttonSaveRef"  needinput="true" onclick="startInterval()">show</button>
+			图像显示区
+			<!-- </br></br> -->
+		  <button type="button" class="buttonSaveRef"  needinput="true" onclick="clearedInterval()">close</button>  
+		  
+		  </div>
+			
+			</tr>
+			<tr style="background-color:rgba(242, 242, 242,0.1); border-radius:25px;">
+				<td>
+				<div style="height:480px;width:640px;background-color:lightgray;float:left; margin-left:10px;">
+					<img id="firstImg"/>
+				</div>&emsp;&emsp;
+				</td>
+				
+				
+				
+				<td>
+				<div style="height:480px;width:640px;background-color:lightgray; float:right; margin-left:70px;">
+					<img id="secImg"/>
+				</div>
+				</td>
+			</tr>
+		</table>
+		
+		
+		
+		
+
+<script type="text/javascript">
+var DEVELOPENV = false; // 标识是否是脱离设备的开发环境， true是开发环境，false是生产环境
+// 开发环境下才需要执行此处代码
+void function (isDevelop, cb) {
+    var locationObj = top.location || window.location;
+    var baseUrl = locationObj.protocol + '//' + locationObj.hostname + ':' + locationObj.port + '/';
+
+    var libjsArr = [
+        "jsBase/lib/jquery.js",
+        "jsBase/lib/sea.js",
+        "jsBase/lib/seajs-text.js",
+        "jsBase/lib/md5.js",
+        "jsBase/lib/base64.js",
+        "module/public.js",
+        "module/Sylvester.js"
+    ];
+
+    // ie下不需要加载无插件解码库
+    if ('ActiveXObject' in window) {
+        // do nothing
+    } else {
+        libjsArr = libjsArr.concat([
+            "module/mp4remux.js",
+            "module/WebGLCanvas.js",
+            "module/audioPlayer.js",
+            "module/streamDrawer.js",
+            "module/videoMediaSource.js",
+            "module/workerManager.js",
+            "module/WebsocketServer.js",
+            "module/playerControl.js"
+        ]);
+    }
+
+    libjsArr.push("module/ivs.js");
+
+    if (isDevelop) { // 开发环境需要执行一堆前置代码
+        libjsArr.push("sdevCore/SDEV.js");
+    } else {
+        // 非开发环境，只需要加载SDEV前置代码
+        libjsArr = ["sdevCore/SDEV.js"];
+    };
+    function loadScript (path) {
+        if (!path) { // 前置代码加载完了
+            return cb && cb();
+        };
+        var script = document.createElement('script');
+        script.src = baseUrl + path;
+        script.setAttribute('type', "text/javascript");
+        document.body.appendChild(script);
+
+        if ('ActiveXObject' in window) { // ie下加载文件
+            script.onreadystatechange = function () {
+                if (script.readyState == 'loaded' || script.readyState == 'complete') {
+                    loadScript(libjsArr.shift());
+                    script.onreadystatechange = null;
+                }
+            }
+        } else {
+            script.onload = function () {
+                loadScript(libjsArr.shift());
+            }
+        }
+    }
+
+    loadScript(libjsArr.shift());
+}(DEVELOPENV, userCodeRun);
+
+// 客户需要执行的代码，都放在这个userCodeRun里面，或者可以参考这这个demo示例，自行修改
+function userCodeRun () {
+    // 需要执行的客户的代码
+    var usersScript = document.createElement('script');
+    usersScript.src = "js/demo.js";
+    document.body.appendChild(usersScript);
+}
+const range = document.getElementById('range');
+
+
+</script>
+</body>
+</html>
