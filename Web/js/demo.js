@@ -100,12 +100,13 @@ function createCanvas(){
 	var otest = document.getElementById("sdev_stream_wrap").getElementsByTagName("div")[0];
 	var canvastest = document.createElement('canvas'); 
 	canvastest.id ="myCanvas";
-	canvastest.width = 640;
-	canvastest.height = 480;
+	// canvastest.width = 640;
+	// canvastest.height = 480;
 	canvastest.style.position ="absolute";
 	canvastest.style.border = "1px solid blue"; 
 	canvastest.style.background="none";
 	canvastest.style.zIndex = "5";
+	canvastest.style.display = "inherit";
 	otest.appendChild(canvastest); 
 	
 	var myCanvas = document.createElement('canvas'); 
