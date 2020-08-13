@@ -24,4 +24,6 @@
 
 ### 总结一下vue中_this替换this的问题
 ### css垂直水平居中
+### 【Linux】Linux中Swap与Memory内存简单介绍
+- https://blog.csdn.net/zwan0518/article/details/12059213
 
