@@ -26,4 +26,6 @@
 ### css垂直水平居中
 ### 【Linux】Linux中Swap与Memory内存简单介绍
 - https://blog.csdn.net/zwan0518/article/details/12059213
+### vue中v-model结合input checked不能使用click监听事件，可以使用click
+- <input type="checkbox" name="vehicle" v-model="checkedValue"  value="Car2"  @change="handleChecked()" />
 
