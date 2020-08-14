@@ -29,3 +29,5 @@
 ### vue中v-model结合input checked不能使用click监听事件，可以使用change
 - <input type="checkbox" name="vehicle" v-model="checkedValue"  value="Car2"  @change="handleChecked()" />
 - https://www.jianshu.com/p/195088987d34
+
+- http://www.lengziyu.cn/blog/
