@@ -1,4 +1,4 @@
-### element-ui中table索取行号的问题
+### element-ui中table索取行号的问题 ~~已解决~~
 - 在table调用row-class-name属性，将index添加到row里面，之后再用scop.row.index就可以获取行号了
 
     ```
