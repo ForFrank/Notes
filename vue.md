@@ -21,3 +21,13 @@
 
     - https://www.jb51.net/article/159576.htm
 ### express搭建mock，学习一下
+
+### 总结一下vue中_this替换this的问题
+### css垂直水平居中
+### 【Linux】Linux中Swap与Memory内存简单介绍
+- https://blog.csdn.net/zwan0518/article/details/12059213
+### vue中v-model结合input checked不能使用click监听事件，可以使用change
+- <input type="checkbox" name="vehicle" v-model="checkedValue"  value="Car2"  @change="handleChecked()" />
+- https://www.jianshu.com/p/195088987d34
+
+- http://www.lengziyu.cn/blog/
