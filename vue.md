@@ -1,3 +1,11 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: leung
+ * @Date: 2020-08-18 15:24:45
+ * @LastEditors: leung
+ * @LastEditTime: 2020-08-18 15:26:03
+-->
 ### element-ui中table索取行号的问题 ~~已解决~~
 - 在table调用row-class-name属性，将index添加到row里面，之后再用scop.row.index就可以获取行号了
 
@@ -32,3 +40,5 @@
 
 - http://www.lengziyu.cn/blog/
 ### javascript高阶函数（学习）
+### js的撤销与重做
+- https://blog.csdn.net/tzllxya/article/details/93396074
