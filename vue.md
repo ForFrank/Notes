@@ -32,3 +32,6 @@
 
 - http://www.lengziyu.cn/blog/
 ### javascript高阶函数（学习）
+### css的grid布局和flex布局学习
+### 异步组件按需加载
+- 
