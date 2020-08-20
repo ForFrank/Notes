@@ -4,7 +4,7 @@
  * @Author: leung
  * @Date: 2020-08-18 15:24:45
  * @LastEditors: leung
- * @LastEditTime: 2020-08-19 10:20:49
+ * @LastEditTime: 2020-08-20 08:45:04
 -->
 ### element-ui中table索取行号的问题 ~~已解决~~
 - 在table调用row-class-name属性，将index添加到row里面，之后再用scop.row.index就可以获取行号了
@@ -44,3 +44,5 @@
 - https://blog.csdn.net/tzllxya/article/details/93396074
 ### 看源码代码规范，注释规范
 ### elementui弹框表头颜色可自定义研究
+### 实用前端标注工具-AILabel.js
+- https://www.jianshu.com/p/96f856598dd8
