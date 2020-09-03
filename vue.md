@@ -4,7 +4,7 @@
  * @Author: leung
  * @Date: 2020-08-18 15:24:45
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-09-01 19:25:29
+ * @LastEditTime: 2020-09-03 14:42:14
 -->
 ### element-ui中table索取行号的问题 ~~已解决~~
 - 在table调用row-class-name属性，将index添加到row里面，之后再用scop.row.index就可以获取行号了
@@ -68,4 +68,8 @@
 这样使用watch时有一个特点，就是当值第一次绑定的时候，不会执行监听函数，只有值发生改变才会执行。如果我们需要在最初绑定值的时候也执行函数，则就需要用到immediate属性。
 
 比如当父组件向子组件动态传值时，子组件props首次获取到父组件传来的默认值时，也需要执行函数，此时就需要将immediate设为true。https://www.cnblogs.com/williamjie/p/11155166.html
+
+
+### [vue.nextTick()方法](https://blog.csdn.net/zhouzuoluo/article/details/84752280)
+
     
