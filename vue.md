@@ -5,7 +5,7 @@
  * @Author: leung
  * @Date: 2020-08-18 15:24:45
  * @LastEditors: Frank
- * @LastEditTime: 2020-09-25 13:43:14
+ * @LastEditTime: 2020-10-16 15:49:38
 -->
 ### element-ui中table索取行号的问题 ~~已解决~~
 - 在table调用row-class-name属性，将index添加到row里面，之后再用scop.row.index就可以获取行号了
@@ -87,3 +87,7 @@ FOR %i IN (D:\项目\大华协议\协议json格式（dahua_protocol）\third_Pro
 
 
 ### [docker安装nextcloud](https://www.cnblogs.com/Timesi/archive/2018/09/21/9688463.html)
+
+
+#### https://www.cnblogs.com/qilj/p/10113087.html
+#### https://www.cnblogs.com/ysocean/p/9392908.html   //nginx代理
