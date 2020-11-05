@@ -5,7 +5,7 @@
  * @Author: leung
  * @Date: 2020-08-18 15:24:45
  * @LastEditors: Frank
- * @LastEditTime: 2020-10-19 14:49:16
+ * @LastEditTime: 2020-11-05 09:02:31
 -->
 ### element-ui中table索取行号的问题 ~~已解决~~
 - 在table调用row-class-name属性，将index添加到row里面，之后再用scop.row.index就可以获取行号了
@@ -92,3 +92,4 @@ FOR %i IN (D:\项目\大华协议\协议json格式（dahua_protocol）\third_Pro
 #### https://www.cnblogs.com/qilj/p/10113087.html
 #### https://www.cnblogs.com/ysocean/p/9392908.html   //nginx代理
 #### httpd_can_network_connect
+#### [Sentry,前端日志监控插件](https://blog.calabash.top/Calabash/articles/5dd4b147d5cac700117dfbe2)
