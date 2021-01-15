@@ -99,3 +99,4 @@ FOR %i IN (D:\项目\大华协议\协议json格式（dahua_protocol）\third_Pro
 #### nodejs和nginx之间的关系
 ##### Node.js是开发平台，Nginx是HTTP基础设施。原则上说Nodejs的http包可以替代nginx，开发阶段也是这样做的，但实际部署都是nodejs作为逻辑层，位于nginx之后。原因在于Nginx的成熟的反向代理和高性能，高可配置，高稳定性。至于tomcat是java的http容器，和nodejs没有关系，大体可以类比做nodejs的http包或者python的wsgi。后台搭建java是否需要nodejs？通常不需要，但也不一定，nodejs是异步的，所以在某些特定状况下可以互补，比如天猫后台服务都是java，前端渲染就用了nodejs。
 ##### [参考](https://www.zhihu.com/question/306108934/answer/556064560)
+### [vue前端架构图](https://www.cnblogs.com/clwydjgs/p/10796763.html)
