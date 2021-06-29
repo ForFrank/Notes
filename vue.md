@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!--
  * @Descripttion: 
  * @version: 
