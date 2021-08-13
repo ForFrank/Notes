@@ -101,3 +101,4 @@ FOR %i IN (D:\项目\大华协议\协议json格式（dahua_protocol）\third_Pro
 ### [vue前端架构图](https://www.cnblogs.com/clwydjgs/p/10796763.html)
 ### [nginx重启失败解决方案](https://www.itsvse.com/thread-3379-1-1.html)
 ### [vue父子组件生命周期函数执行顺序的问题](https://juejin.cn/post/6844904113914773518)
+### https://letsbuildui.dev/articles/building-an-audio-player-with-react-hooks 音乐播放器
